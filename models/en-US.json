@@ -1,0 +1,42 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "raspberry pie",
+      "intents": [
+        {
+          "name": "takePictureIntent",
+          "samples": [
+            "take a photo of me",
+            "take a picture right now",
+            "to take a picture of me",
+            "take a photo",
+            "to take a picture"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "takeVideoIntent",
+          "samples": [
+            "start a video now",
+            "film me",
+            "video me",
+            "make a movie",
+            "start taking video",
+            "take a video"
+          ]
+        }
+      ]
+    }
+  }
+}

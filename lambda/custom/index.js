@@ -19,7 +19,7 @@ const HELP_REPROMPT = 'If you want me to take a photo of you, just say take a pi
 const STOP_MESSAGE = 'Goodbye!';
 
 const LaunchRequestHandler = {
-    canHandle() {
+    canHandle(handlerInput) {
         return handlerInput.requestEnvelope.request.type === "LaunchRequest";
     },
     handle(handlerInput, error) {
@@ -31,7 +31,7 @@ const LaunchRequestHandler = {
 };
 
 const CameraControlHandler = {
-    canHandle() {
+    canHandle(handlerInput) {
         return handlerInput.requestEnvelope.request.type === "IntentRequest" &&
                 handlerInput.requestEnvelope.intent.name === "cameraControlIntent";
     },
@@ -89,7 +89,7 @@ const RequestLog = {
 };
 
 const ErrorHandler = {
-    canHandle() {
+    canHandle(handlerInput) {
         return true;
     },
     handle(handlerInput, error) {
